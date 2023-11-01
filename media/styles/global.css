@@ -33,16 +33,24 @@ header #header-links ul a:hover {
   color: #005FA3;
 }
 header #banner {
-  position: relative;
+  height: 670px;
+  background-image: url("/media/images/headerBg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 header #banner .slider {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
   height: 60%;
-  width: 60%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,9 +67,33 @@ header #banner .slider {
   gap: 10%;
 }
 header #banner .slider .slide-traffic {
-  background: rgba(180, 180, 180, 0.4117647059);
   width: 100%;
   height: 100%;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+header #banner .slider .slide-traffic h2 {
+  font-size: 2.8rem;
+  width: 50%;
+}
+header #banner .slider .slide-traffic button {
+  width: 270px;
+  padding: 15px;
+  background: #005FA3;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 header #banner .slider .slider-controls {
   width: 100%;
@@ -105,6 +137,153 @@ header #banner .slider .slider-controls .btn-left-right button:hover {
   background: rgba(177, 177, 177, 0.7333333333);
 }
 
+main #our-services {
+  padding: 7% 20%;
+  background: #ebebeb;
+}
+main #our-services h2 {
+  font-size: 36px;
+  margin-bottom: 60px;
+}
+main #our-services .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+main #our-services .cards .card {
+  width: 350px;
+  height: 360px;
+  background-image: url("/media/images/item.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  padding: 3%;
+  position: relative;
+}
+main #our-services .cards .card .blue-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 95, 163, 0.65);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+main #our-services .cards .card span {
+  z-index: 1;
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+main #our-services .cards .card:hover .blue-bg {
+  display: block;
+}
+main #about-us {
+  padding: 7% 20%;
+}
+main #about-us .about-container {
+  width: 1110px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+main #about-us .about-container .text-about {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10%;
+}
+main #about-us .about-container .text-about h2 {
+  font-size: 3rem;
+}
+main #about-us .about-container .text-about h2 span {
+  color: #005FA3;
+}
+main #about-us .about-container .text-about .p-lorem {
+  font-size: 1.2rem;
+  color: rgba(51, 51, 51, 0.6117647059);
+  display: inline-block;
+  width: 80%;
+}
+main #about-us .about-container .cards-about {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+main #about-us .about-container .cards-about .card-about {
+  width: 255px;
+  aspect-ratio: 1;
+  background: #ebebeb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  padding: 30px;
+}
+main #about-us .about-container .cards-about .card-about p {
+  font-weight: 600;
+}
+main #about-us .about-container .cards-about .card-about p span {
+  font-size: 4rem;
+  font-weight: 800;
+}
+main #about-us .about-container .cards-about .card-about a {
+  text-decoration: underline;
+  color: #005FA3;
+  font-weight: 600;
+}
+main #about-us .about-container .cards-about .card-about:hover {
+  background: #005FA3;
+  color: #fff;
+}
+main #about-us .about-container .cards-about .card-about:hover a {
+  color: #fff;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -116,14 +295,10 @@ header #banner .slider .slider-controls .btn-left-right button:hover {
 
 body {
   max-width: 1920px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+}
+body h6 {
+  color: #bdbdbd;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
 }

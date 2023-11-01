@@ -12,10 +12,13 @@
     text-decoration: none;
 }
 
-// times
 body{
     max-width: 1920px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+    h6{
+        color: #bdbdbd;
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
 }

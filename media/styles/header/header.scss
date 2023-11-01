@@ -1,90 +1,110 @@
-header{
-    width: 100%;
+header {
+  width: 100%;
 
-    #header-links{
+  #header-links {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+    padding: 20px 0;
+
+
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 30%;
+      a {
+        color: #000;
+        font-size: 1.1em;
+        font-weight: 600;
+        letter-spacing: 1px;
+      }
+      a:hover {
+        color: $clr-blue;
+      }
+    }
+  }
+
+  #banner {
+    height: 670px;
+    background-image: url("/media/images/headerBg.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .slider {
+      height: 60%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      align-items: center;
+      gap: 10%;
+
+      // times
+      .slide-traffic {
+        width: 100%;
+        height: 100%;
+        color: #fff;
         display: flex;
-        justify-content: center;
-        gap: 10%;
-        padding: 20px 0;
-
-        ul{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 30%;
-            a{
-                color: #000;
-                font-size: 1.1em;
-                font-weight: 600;
-                letter-spacing: 1px;
-            }
-            a:hover{
-                color: $clr-blue;
-            }
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: start;
+        h2 {
+          font-size: 2.8rem;
+          width: 50%;
         }
-    }
-
-    #banner{
-        position: relative;
-
-        .slider{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            height: 60%;
-            width: 60%;
-            display: flex;
-            flex-direction: column;
-            justify-content: end;
-            align-items: center;
-            gap: 10%;
-
-            // times
-            .slide-traffic{
-                background: #b4b4b469;
-                width: 100%;
-                height: 100%;
-            }
-            .slider-controls{
-                width: 100%;
-                display: flex;
-                justify-content: space-between;
-                .btn-controls{
-                    display: flex;
-                    align-items: center;
-                    justify-content: space-around;
-                    width: 150px;
-
-                    button{
-                        width: 10px;
-                        aspect-ratio: 1;
-                        background: #9c9a9aa2;
-                        border: none;
-                        border-radius: 50%;
-                    }
-                    // times
-                    button:hover{
-                        background: #fff;
-                    }
-                }
-
-                .btn-left-right{
-                    button{
-                        width: 50px;
-                        aspect-ratio: 1;
-                        border: none;
-                        background: #c9c9c93b;
-                        color: #fff;
-                        font-size: 1.1em;
-                    }
-
-                    // times
-                    button:hover{
-                        background: #b1b1b1bb;
-                    }                    
-                }
-            }
+        button {
+          width: 270px;
+          padding: 15px;
+          background: $clr-blue;
+          color: #fff;
+          border: none;
+          cursor: pointer;
         }
+      }
+      .slider-controls {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        .btn-controls {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          width: 150px;
+
+          button {
+            width: 10px;
+            aspect-ratio: 1;
+            background: #9c9a9aa2;
+            border: none;
+            border-radius: 50%;
+          }
+          // times
+          button:hover {
+            background: #fff;
+          }
+        }
+
+        .btn-left-right {
+          button {
+            width: 50px;
+            aspect-ratio: 1;
+            border: none;
+            background: #c9c9c93b;
+            color: #fff;
+            font-size: 1.1em;
+          }
+
+          // times
+          button:hover {
+            background: #b1b1b1bb;
+          }
+        }
+      }
     }
+  }
 }
