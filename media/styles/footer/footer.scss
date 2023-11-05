@@ -1,0 +1,43 @@
+footer {
+  .contact {
+    width: 100%;
+    background-image: url("/media/images/footerBg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    padding: 5% 20%;
+    color: #fff;
+
+    .text-contact{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        align-items: start;
+        justify-content: start;
+        border: 1px solid #fff;
+    }
+    .message {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 20px;
+        justify-content: center;
+        flex: 1;
+        
+        border: 1px solid #fff;
+
+      .send-message-btn {
+        width: 270px;
+        padding: 15px;
+        background: $clr-blue;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+    }
+  }
+}

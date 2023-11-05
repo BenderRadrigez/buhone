@@ -5,8 +5,8 @@
 @import "./media/media.scss";
 
 @font-face {
-  font-family: lato-black;
-  src: url("../fonts/Lato-Black.ttf");
+  font-family: lato;
+  src: url("../fonts/Lato-Regular.ttf");
 }
 
 * {
@@ -15,7 +15,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: lato-black;
+  font-family: lato;
 }
 
 body {
@@ -38,14 +38,15 @@ body {
     justify-content: end;
     align-items: center;
     gap: 30px;
+    overflow: hidden;
 
     .slide-traffic {
       width: 100%;
       height: 100%;
-      color: #fff;
       display: flex;
       justify-content: space-around;
       align-items: start;
+      transition: .5s;
     }
     .slider-controls {
       width: 100%;
