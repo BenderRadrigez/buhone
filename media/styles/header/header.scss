@@ -35,24 +35,11 @@ header {
     align-items: center;
     justify-content: center;
 
-    .slider {
+    .slider{
       height: 60%;
       width: 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: end;
-      align-items: center;
-      gap: 10%;
-
-      // times
-      .slide-traffic {
-        width: 100%;
-        height: 100%;
-        color: #fff;
-        display: flex;
+      .banner-traffic{
         flex-direction: column;
-        justify-content: space-around;
-        align-items: start;
         h2 {
           font-size: 2.8rem;
           width: 50%;
@@ -64,45 +51,6 @@ header {
           color: #fff;
           border: none;
           cursor: pointer;
-        }
-      }
-      .slider-controls {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        .btn-controls {
-          display: flex;
-          align-items: center;
-          justify-content: space-around;
-          width: 150px;
-
-          button {
-            width: 10px;
-            aspect-ratio: 1;
-            background: #9c9a9aa2;
-            border: none;
-            border-radius: 50%;
-          }
-          // times
-          button:hover {
-            background: #fff;
-          }
-        }
-
-        .btn-left-right {
-          button {
-            width: 50px;
-            aspect-ratio: 1;
-            border: none;
-            background: #c9c9c93b;
-            color: #fff;
-            font-size: 1.1em;
-          }
-
-          // times
-          button:hover {
-            background: #b1b1b1bb;
-          }
         }
       }
     }
