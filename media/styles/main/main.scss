@@ -126,6 +126,7 @@ main {
     background: $bgclr-gray;
     .slider{
       .clients-traffic{
+        flex-wrap: wrap;
       }
     }
   }

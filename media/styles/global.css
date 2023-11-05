@@ -217,6 +217,10 @@ main #our-clients {
   padding: 7% 20%;
   background: #ebebeb;
 }
+main #our-clients .slider .clients-traffic {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
 main #reviews {
   padding: 7% 20%;
 }
